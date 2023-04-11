@@ -1,7 +1,7 @@
 import {assert} from 'chai'
 import {PermissionLevel, SessionKit} from '@wharfkit/session'
 
-import {WalletPluginTEMPLATE} from '$lib'
+import {WalletPluginEtherAccount} from '$lib'
 import {mockFetch} from '$test/utils/mock-fetch'
 import {MockStorage} from '$test/utils/mock-storage'
 import {MockUserInterface} from '$test/utils/mock-ui'
@@ -19,7 +19,7 @@ const mockSessionKitOptions = {
     fetch: mockFetch, // Required for unit tests
     storage: new MockStorage(),
     ui: new MockUserInterface(),
-    walletPlugins: [new WalletPluginTEMPLATE()],
+    walletPlugins: [new WalletPluginEtherAccount()],
 }
 
 suite('wallet plugin', function () {

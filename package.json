@@ -1,12 +1,12 @@
 {
-    "name": "@wharfkit/wallet-plugin-template",
+    "name": "@wharfkit/wallet-plugin-etheraccount",
     "description": "A template to create wallet plugins for use with @wharfkit/session.",
     "version": "0.3.0",
-    "homepage": "https://github.com/wharfkit/wallet-plugin-template",
+    "homepage": "https://github.com/wharfkit/wallet-plugin-etheraccount",
     "license": "BSD-3-Clause",
-    "main": "lib/wallet-plugin-template.js",
-    "module": "lib/wallet-plugin-template.m.js",
-    "types": "lib/wallet-plugin-template.d.ts",
+    "main": "lib/wallet-plugin-etheraccount.js",
+    "module": "lib/wallet-plugin-etheraccount.m.js",
+    "types": "lib/wallet-plugin-etheraccount.d.ts",
     "sideEffects": false,
     "files": [
         "lib/*",
@@ -16,6 +16,8 @@
         "prepare": "make"
     },
     "dependencies": {
+        "@metamask/detect-provider": "1.2",
+        "ethers": "5",
         "tslib": "^2.1.0"
     },
     "peerDependencies": {

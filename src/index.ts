@@ -13,7 +13,12 @@ import {
     WalletPluginSignResponse,
 } from '@wharfkit/session'
 
-export class WalletPluginTEMPLATE extends AbstractWalletPlugin implements WalletPlugin {
+const networks = {
+    '5fff1dae8dc8e2fc4d5b23b2c7665c97f9e9d8edf2b6485a86ba311c25639191': Number(95), //Kylin testnet
+    aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906: Number(59), //EOS Mainnet
+}
+
+export class WalletPluginEtherAccount extends AbstractWalletPlugin implements WalletPlugin {
     /**
      * The logic configuration for the wallet plugin.
      */
@@ -31,11 +36,11 @@ export class WalletPluginTEMPLATE extends AbstractWalletPlugin implements Wallet
      * The metadata for the wallet plugin to be displayed in the user interface.
      */
     readonly metadata: WalletPluginMetadata = {
-        name: 'Wallet Plugin Template',
-        description: 'A template that can be used to build wallet plugins!',
+        name: 'Metamask (etheraccount)',
+        description: 'Use the etheraccount smart contract with Metamask.',
         logo: 'base_64_encoded_image',
-        homepage: 'https://someplace.com',
-        download: 'https://someplace.com/download',
+        homepage: 'https://forums.eoscommunity.org/t/eos-mainnet-is-now-available-on-metamask/4264',
+        download: 'https://forums.eoscommunity.org/t/eos-mainnet-is-now-available-on-metamask/4264',
     }
     /**
      * A unique string identifier for this wallet plugin.
@@ -43,7 +48,7 @@ export class WalletPluginTEMPLATE extends AbstractWalletPlugin implements Wallet
      * It's recommended this is all lower case, no spaces, and only URL-friendly special characters (dashes, underscores, etc)
      */
     get id(): string {
-        return 'wallet-plugin-template'
+        return 'wallet-plugin-etheraccount'
     }
     /**
      * Performs the wallet logic required to login and return the chain and permission level to use.

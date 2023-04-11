@@ -1,13 +1,10 @@
-# @wharfkit/wallet-plugin-template
+# @wharfkit/wallet-plugin-etheraccount
 
-A template to create a `WalletPlugin` for use within the `@wharfkit/session` library.
+A wallet plugin to use the etheraccount smart contract with Metamask.
 
 ## Usage
 
--   [Use this as a template.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
--   Write your wallet plugin's logic.
--   Publish it on Github or npmjs.com
--   Include it in your project and use it.
+TODO
 
 ## Developing
 
