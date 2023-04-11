@@ -1,5 +1,7 @@
 # @wharfkit/wallet-plugin-etheraccount
 
+# This plugin is an experiment and in development, and should not be used in production environments.
+
 A wallet plugin to use the etheraccount smart contract with Metamask.
 
 ## Usage
