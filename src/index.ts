@@ -180,7 +180,7 @@ export class WalletPluginEtherAccount extends AbstractWalletPlugin implements Wa
         context: TransactContext
     ): Promise<WalletPluginSignResponse> {
         const actions = Serializer.encode({
-            object: resolved.resolvedTransaction.actions,
+            object: resolved.transaction.actions,
             type: 'action[]',
             customTypes: [Action],
         }).array
